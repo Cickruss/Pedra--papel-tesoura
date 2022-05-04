@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+</head>
+<body>
+    <center>
+        <label style="font-size: 400%; font-weight: 900; text-transform: uppercase;" id="titulo">Pedra Papel Tesoura</label>
+        <br><br>
+        <input type="text" width="10%" id="player1">
+        <input type="text" width="10%" id="player2">
+        <button onclick="jogar()">Iniciar</button>
+        <br>
+        
+        <div id="escolha1">
+            <h3>Jogada 1:</h3>
+        <br>
+            <img width="200" onclick="pedra1()" src="Res/rock.png" alt="">
+            <img width="200" onclick="papel1()" src="Res/papel.png" alt=""> 
+            <img width="200" onclick="tesoura1()" src="Res/tesoura.png" alt="">  
+        </div>
+        <div style="display: none;" id="escolha2">
+            <h3>Jogada 2:</h3>
+            <br>
+            <img width="200" onclick="pedra2()" src="Res/rock.png" alt="">
+            <img width="200" onclick="papel2()" src="Res/papel.png" alt=""> 
+            <img width="200" onclick="tesoura2()" src="Res/tesoura.png" alt="">  
+        </div>
+        <br>
+        <br>
+        <button onclick="proxima()" id="pr" style="visibility: hidden;">Proxima Rodada</button>
+        <br>
+        <button onclick="reload()" id="reiniciar" style="visibility: hidden;">Reiniciar</button>
+    </center>
+            
+
+</body>
+</html>
